@@ -140,7 +140,7 @@ body {
 
 .banner__title {
 	margin: 0;
-	padding-bottom: 9px;
+	padding-bottom: 13px;
 	font-size: 30px;
 	line-height: 29px;
 	color: #fff;
@@ -149,7 +149,7 @@ body {
 .banner__link {
 	position: relative;
 	padding-right: 49px;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 11px;
 	color: #fff;
 	text-decoration: none;
