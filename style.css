@@ -188,7 +188,7 @@ body {
 .products {
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 52px;
+	margin-bottom: 54px;
 }
 
 .products__title {
@@ -319,7 +319,7 @@ body {
   justify-content: space-between;
 	background: #000;
 	color: #fff;
-	padding: 68px 45px 64px 33px;
+	padding: 67px 45px 63px 33px;
 }
 
 .player-wrapper {
@@ -331,7 +331,6 @@ body {
 .main__img {
 	width: 100%;
 }
-
 
 .play-button {
 	position: absolute;
@@ -366,6 +365,7 @@ body {
 	justify-content: center;
 	box-sizing: border-box;
 	width: 28%;
+	margin-bottom: 3px;
 }
 
 .main__title {
