@@ -462,7 +462,6 @@ body {
 	line-height: 18px;
 }
 
-
 .stories-item__link {
 	align-self: flex-start;
 	position: absolute;
@@ -521,6 +520,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 80px;
 }
 
 .gallery__title {
@@ -542,8 +542,122 @@ body {
 	width: 14.28%;
 }
 
-@media (max-width: 1024px) {
+.footer {
+  display: flex;
+ 	flex-wrap: wrap;
+ 	justify-content: space-between;
+ 	padding: 57px 16.7% 23px 17%;
+ 	background: #000;
+ 	color: #fff;
+ 	font-size: 12px;
+	line-height: 11px;
+}
 
+.footer-item {
+	margin-bottom: 40px;
+}
+
+.footer-item:first-child {
+	margin-right: 41px;
+}
+
+.footer-item:nth-child(3) {
+	margin-right: 10px;
+}
+
+
+.footer-item__title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.footer-item__link {
+	margin-bottom: 7px;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	transition: opacity .5s;
+}
+
+.footer-item__link:hover {
+	opacity: .5;
+}
+
+.footer-item__link:nth-child(5) {
+	margin-bottom: 10px;
+}
+
+.footer-item:nth-child(4) .footer-item__title {
+	margin-bottom: 7px;
+}
+
+.footer-item__text {
+	margin-top: 0;
+	margin-bottom: 13px;
+}
+
+.footer-item__button {
+	display: inline-block;
+	margin-bottom: 33px;
+	padding: 9px 45px;
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 9px;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	transition: opacity .5s;
+}
+
+.footer-item__button:hover {
+	opacity: .5;
+}
+
+.social {
+	display: flex;
+	width: 137px;
+	justify-content: space-between;
+	font-size: 0;
+}
+
+.social__item {
+	width: 34px;
+	height: 20px;
+	transition: opacity .5s;
+}
+
+.social__item:hover {
+	cursor: pointer;
+	opacity: .5;
+}
+
+.social__item_fsb {
+	background: no-repeat url('img/fsb.svg');
+}
+
+.social__item_twi {
+	background: no-repeat url('img/twi.svg');
+	background-position: 0 2px;
+}
+
+.social__item_inst {
+	background: no-repeat url('img/inst.svg');
+	background-position: 8px 0;
+}
+
+.social__item_ptrs {
+	background: no-repeat url('img/ptrs.svg');
+	background-position: 17px 1px;
+}
+
+
+ .footer__copyright {
+ 	width: 100%;
+ 	margin-right: 8px;
+ 	text-align: center;
+}
+
+@media (max-width: 1024px) {
 	.wrapper {
 		width: 90.8%;
 	}
@@ -697,17 +811,32 @@ body {
     width: 25px;
   }
 
+  .gallery {
+  	margin-bottom: 94px;
+  }
+
   .gallery__title {
   	margin-bottom: 11px;
   }
 
-  
+  .footer {
+	 	padding: 57px 11.9% 23px 12.5%;
+	}
 
+	.footer-item {
+		margin-bottom: 40px;
+	}
 
+	.footer__item__button {
+		padding: 9px 45px;
+	}
+
+	.footer__copyright {
+		margin-right: 11px;
+	}
 }
 
 @media (max-width: 910px) {
-
 	.logo {
 		margin-right: 15px;
 	}
@@ -728,11 +857,9 @@ body {
 		font-size: 10px;
 		line-height: 8px;
 	}
-
 }
 
 @media (max-width: 768px) {
-
 	.wrapper {
 		width: 100%;
 	}
@@ -881,7 +1008,6 @@ body {
 		padding: 0;
 		box-sizing: border-box;
 	}
-
 
 	.products-item:after {
 		display: none;
@@ -1070,6 +1196,7 @@ body {
 	.gallery {
 		position: relative;
 		padding-top: 55px;
+		margin-bottom: 123px;
 	}
 
 	.gallery:after {
@@ -1102,19 +1229,78 @@ body {
 		opacity: 1;
 	}
 
+	.footer {
+		padding: 47px 5.6% 23px 6.6%;
+	}
+
+	.footer-item {
+		margin-bottom: 55px;
+	}
+
+	.footer-item:first-child {
+    margin-right: 0px;
+	}
+
+	.footer-item:nth-child(2) {
+    margin-right: 9px;
+	}
+
+	.footer-item:nth-child(3) {
+    margin-right: 13px;
+	}
+
+	.footer-item:nth-child(4) {
+    width: 23%;
+	}
+
+	.footer-item__title {
+		margin-bottom: 9px;
+	}
+
+	.footer-item__link {
+		margin-bottom: 8px;
+	}
+
+	.footer-item__text {
+		text-align: justify;
+	}
+
+	.footer-item__button {
+		padding: 7px 48px;
+		margin-bottom: 27px;
+	}
+
+	.social {
+		width: 120px;
+	}
+
+	.social__item {
+		position: relative;
+		height: 16px;
+		width: 16px;
+		background-size: contain;
+		background-position: 0 0;
+	}
+
+	.social__item_twi {
+		left: -6px;
+    top: 3px;
+	}
+
+	.social__item_inst {
+		left: -3px;
+    top: 1px;
+	}
 }
 
 
 @media (max-width: 670px) {
-
 	.stories-item__link {
 			padding-right: 43px;
 	}
-
 }
 
 @media (max-width: 650px) {
-
 	.banner {
     padding-right: 30%;
     background-position: 35%;
@@ -1142,11 +1328,9 @@ body {
 		right: auto;
 		left: 0;
 	}
-
 }
 
 @media (max-width: 540px) {
-
 	.products__title {
 		font-size: 26px;
     line-height: 24px;
@@ -1182,16 +1366,109 @@ body {
 		line-height: 21px;
 	}
 
+	.gallery {
+		margin-bottom: 18px;
+	}
+
 	.gallery__title {
 		margin: 0 44px 13px 0;
 		font-size: 25px;
 		line-height: 24px;
 	}
 
+	.footer {
+		flex-direction: column;
+		padding: 23px 0 21px 0;
+		text-align: center;
+		font-size: 15px;
+		line-height: 14px;
+	}
+
+	.footer-item {
+		padding-right: 0;
+		padding-left: 0;
+		margin-bottom: 24px;
+	}
+
+	.footer-item:first-child {
+    order: 1;
+	}
+
+	.footer-item:nth-child(2) {
+		order: 3;
+    margin-right: 0;
+    margin-bottom: 31px;
+	}
+
+	.footer-item:nth-child(3) {
+		order: 2;
+    margin-right: 0;
+    margin-bottom: 29px;
+	}
+
+	.footer-item:nth-child(3) .footer-item__link,
+	.footer-item:nth-child(2) .footer-item__link {
+		margin-bottom: 6px;
+	}
+
+	.footer-item:nth-child(4) {
+		order: 4;
+    width: 180px;
+    margin: 0 auto 28px auto;
+	}
+
+	.footer-item__link {
+    margin-bottom: 10px;
+	}
+
+	.footer-item__text {
+    text-align: center;
+    margin-bottom: 23px;
+	}
+
+	.footer-item:nth-child(4) .footer-item__title {
+    margin-bottom: 12px;
+	}
+
+	.footer-item__button {
+		margin-bottom: 103px;
+		padding: 11px 48px;
+		font-size: 12px;
+		line-height: 11px;
+	}
+
+	.social {
+		width: auto;
+	}
+
+	.social__item {
+		width: 22px;
+		height: 22px;
+	}
+
+	.social__item_fsb {
+		left: 6px;
+	}
+
+	.social__item_inst {
+		right: 5px;
+		left: auto;
+	}	
+
+	.social__item_ptrs {
+		right: 4px;
+	}
+
+	.footer__copyright {
+		order: 5;
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 13px;
+    line-height: 12px;
+	}
 }
 
 @media (max-width: 480px) {
-
 	.play-button {
 		top: 42.4%;
 		left: 45.7%;
@@ -1206,11 +1483,9 @@ body {
 		border: 2px solid transparent; 
 		border-left: 4px solid rgba(0, 0, 0, 0.5);
 	}
-
 }
 
 @media (max-width: 376px) {
-
 	.header {
 		padding: 24px 46px 24px 48px;
 	}
@@ -1467,11 +1742,9 @@ body {
 	.gallery__img:nth-child(4) {
 		order: 6;
 	}
-
 }
 
 @media (max-width: 320px) {
-
 	.header {
     padding: 24px 20px 26px 20px;
 	}
@@ -1513,10 +1786,20 @@ body {
 
 	.gallery {
 		padding-bottom: 62px;
+		margin-bottom: 23px;
 	}
 
 	.gallery__img {
 		width: 43.8%;
 	}
 
+	.footer {
+		margin-left: 3px;
+		margin-right: 4px;
+	}
+
+	.social__item_inst {
+		right: 7px;
+		top: 0;
+	}	
 }
